@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Body Mass Index</title>
+</head>
+<body>
+    {% for i in st_l %}
+    {% if i["key"] %}
+    <h2>Your BMI = {{ bmi }} => {{ i["value"] }}</h2>
+    {% endif %}
+    {% endfor %}
+</body>
+</html>
