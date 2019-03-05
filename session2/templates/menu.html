@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+</head>
+<body>
+    <h2>Xin chao {{ user }}</h2>
+    {% for food in items_l %}
+    <h3>{{ food.name }}</h3>
+    <a href="/menu/{{ loop.index0 }}">detail</a>
+    {% endfor %}
+</body>
+</html>
