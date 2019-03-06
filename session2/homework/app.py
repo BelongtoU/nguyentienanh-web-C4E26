@@ -10,7 +10,7 @@ rental_bikes =[]
 @app.route("/new_bike", methods = ["GET", "POST"])
 def n_b ():
   if request.method == "GET":
-    return render_template("bike_rental_service.html")
+    return render_template("4_se.html")
   elif request.method =="POST":
     form_full = request.form 
     new_bikes = {

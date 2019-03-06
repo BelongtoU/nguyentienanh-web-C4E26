@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+
+    input {
+        border: 1px inset gray;
+        border-radius: 3px;
+        width: 400px;
+        padding: 1px 0px;
+        display: inline;
+    }
+
+    h4 {
+        font-weight: bold;
+        font-style: normal;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        font-style: normal;     
+        text-align: left;
+        margin-left: 500px;
+        margin-top: 100px
+    }
+
+    button{
+        border: none;
+        background-color:slateblue;
+        color: white;
+        border-radius: 3px;
+        height: 25px
+    }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Add a bike</title>
 </head>
 <body>
+    
     <form  method = "POST">
-    <h2>Model </h2>
+    <h4>Model </h4>
     <input type="text" name="model">
-    <h2>Daily fee (VND) </h2>
+    <h4>Daily fee (VND) </h4>
     <input type="number" name="fee">
-    <h2>Image </h2>
+    <h4>Image </h4>
     <input type="text" name="img">
-    <h2>Year </h2>
+    <h4>Year </h4>
     <input type="number" name="year">
-    <br>
+    <h4></h4>
     <button>Submit</button>
    </form>
+    
 </body>
 </html>
