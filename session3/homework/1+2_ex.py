@@ -2,11 +2,9 @@ from pymongo import MongoClient
 
 uri = "mongodb://admin:admin@ds021182.mlab.com:21182/c4e"
 
-c4e = MongoClient(uri).c4e 
+all_clt = MongoClient(uri).c4e 
 
-# mgdb = client.test 
-
-posts_colection = c4e["posts"]
+posts_clt = all_clt["posts"]
 
 new_post ={
     "title": "HELP ME :((",
@@ -19,4 +17,4 @@ new_post ={
     """
 }
 
-posts_colection.insert_one(new_post)
+posts_clt.insert_one(new_post)
