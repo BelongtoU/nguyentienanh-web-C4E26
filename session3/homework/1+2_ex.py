@@ -17,4 +17,4 @@ new_post ={
     """
 }
 
-posts_clt.insert_one(new_post)
+posts_clt.delete_one(new_post)
